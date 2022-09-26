@@ -113,18 +113,13 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-    # https://docs.djangoproject.com/en/4.1/howto/static-files/
-
 STATIC_URL = '/static/'
 
-# this is directory name where collectstatic files command will put your app level static files
-STATIC_ROOT = 'staticfiles'
 
 # this is directory paths where you have to put your project level static files
 # you can put multiple folders here
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "../landing/static"),
+    os.path.join(BASE_DIR, "static"),
 )
 
 # Default primary key field type
